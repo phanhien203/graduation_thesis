@@ -2,21 +2,15 @@
     DEMO STYLE
 */
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body {
     font-family: Arial;
-    background: linear-gradient(rgb(31,91,131), rgb(23,42,89));
+    background: #152036;
 }
 
-/*
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
+* {
+    font-family: 'Lato', sans-serif;
 }
-*/
 
 a,
 a:hover,
@@ -27,11 +21,11 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
+    margin-bottom: 15px;
     background-color: transparent;
     border: none;
     border-radius: 0;
-    margin-bottom: 40px;
+    color: #fff;
 }
 
 .navbar-btn {
@@ -60,7 +54,7 @@ a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: rgb(24,23,69);
+    background: #1b2a47;
     color: #fff;
     transition: all 0.3s;
 }
@@ -71,7 +65,7 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: rgb(24,23,69);
+    background: ##1b2a47;
 }
 
 #sidebar ul.components {
@@ -141,7 +135,9 @@ a.article:hover {
 }
 #logocompany{
 	padding: 5px;
-	width: 100%;
+	width: 100px;
+    border-radius: 50%;
+
 	border-bottom: 1px solid #47748b;
 }
 /* ---------------------------------------------------
@@ -176,18 +172,17 @@ a.article:hover {
 ----------------------------------------------------- */
 .card-dasboard{
 	min-width: 220px;
-	background: rgb(26,34,75);
+	background: #1b2a47;
 	color : white;
 	border-radius: 5px;
 	font-family: Arial;
 	height: 380px
 }
 .card-header{
-	font-family: 'Share Tech Mono', monospace;
     color: #ffffff;
     color: #daf6ff;
     text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0), 0 0 30px rgba(10, 175, 230, 0), 0 0 40px rgba(10, 175, 230, 0);
-	font-size: 30px;
+	font-size: 18px;
 }
 .card-body{
 	height: 310px;
@@ -195,20 +190,38 @@ a.article:hover {
 
 @media screen and (min-width: 601px) {
     .card-header{
-        font-family: 'Share Tech Mono', monospace;
         color: #ffffff;
         color: #daf6ff;
         text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0), 0 0 30px rgba(10, 175, 230, 0), 0 0 40px rgba(10, 175, 230, 0);
-        font-size: 30px;
     }
   }
   
 @media screen and (max-width: 600px) {
 .card-header{
-    font-family: 'Share Tech Mono', monospace;
     color: #ffffff;
     color: #daf6ff;
     text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0), 0 0 30px rgba(10, 175, 230, 0), 0 0 40px rgba(10, 175, 230, 0);
-    font-size: 22px;
+    font-size: 12px;
     }   
+}
+
+.toggle-handle {
+    position: absolute !important;
+    left: 27.5px !important;
+    padding: 0 !important;
+}
+
+.toggle {
+    width: 50px !important;
+}
+
+.toggle.btn {
+    border-radius: 20px !important;
+    border: none;
+}
+
+.toggle-handle.btn {
+    /* top: -2px; */
+    width: 45px;
+    border-radius: 20px;
 }

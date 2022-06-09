@@ -151,7 +151,7 @@ $(document).ready(function () {
 })
 
 let chartColorsvolt = {
-    green: '#39ff14'
+    green: '#199c7c'
 };
 
 function randomScalingFactorvolt() {
@@ -219,7 +219,7 @@ let configVoltChart = {
                 },
                 gridLines: {
                     display: true,
-                    color: "#5a8d03"
+                    color: "#59e0c5"
                 }
             }]
         },
@@ -293,11 +293,11 @@ $(document).ready(function () {
 })
 var chartColors = {
     red: '#ff073a',
-    orange: 'rgb(255, 159, 64)',
-    yellow: 'rgb(255, 205, 86)',
+    orange: '#FF5722',
+    yellow: '#f3c30b',
     green: 'rgb(75, 192, 192)',
-    blue: 'rgb(54, 162, 235)',
-    purple: '#DF00FE',
+    blue: '#337ab7',
+    purple: '#AA00FF',
     grey: 'rgb(201, 203, 207)'
 };
 
@@ -367,7 +367,7 @@ var configVibrationChart = {
                 },
                 gridLines: {
                     display: true,
-                    color: "rgb(106,53,156)"
+                    color: "#805bbe"
                 }
             }]
         },
@@ -587,7 +587,7 @@ $(document).ready(function () {
 })
 
 var chartColorstemperature = {
-    yellow: '#ffdf01'
+    yellow: '#f3c30b'
 };
 
 function randomScalingFactortemperature() {
@@ -655,7 +655,7 @@ var configTemperatureChart = {
                 },
                 gridLines: {
                     display: true,
-                    color: "#fcc201"
+                    color: "#f8ac59"
                 }
             }]
         },

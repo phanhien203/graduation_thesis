@@ -3,6 +3,6 @@
 npm install
 # Start server
 
-node bin/www
+npm run start
 
 # Server runs on port 80
