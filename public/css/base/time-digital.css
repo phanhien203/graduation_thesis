@@ -1,28 +1,25 @@
 #clock {
-    color: #ffffff;
-	position: absolute;
-  	right: 5%;
-	margin-left: 10%;
 	font-size: 20px;
 	color: #fff;
-    text-shadow: 0 0 10px #39ff14;
 }
 .timeRunning{
-    color: #ffffff;
-	position: absolute;
-  	left: 5%;
-	margin-right: 10%;
 	font-size: 20px;	
 	color: #fff;
-    text-shadow: 0 0 10px #39ff14;
 }
 .timeShecdule{
-    color: #ffffff;
-	position: absolute;
-  	left: 5%;
-	margin-top: 50px;
-	margin-right: 10%;
 	font-size: 20px;	
 	color: #fff;
-    text-shadow: 0 0 10px #39ff14;
+}
+.wrap-time {
+	margin-top: 5px;
+	height: 2.5rem;
+	justify-content: space-between;
+}
+
+.btn-submit {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	margin: 5px;
+	height: 2rem;
 }

@@ -57,7 +57,7 @@ $(document).ready(function () {
     $("#GaugeMeter_1").gaugeMeter({ used: 0, percent: 0 });
     // Start motor
     $("#motorStart").click(function (event) {
-        socket.emit('/reqDashboard', { value: 'true', lop : "1" }, 'motorStart');
+        socket.emit('/reqDashboard', { value: 'true', lop: "1" }, 'motorStart');
         // window.alert("Start Successful!");
     });
     // Stop motor
@@ -151,7 +151,7 @@ $(document).ready(function () {
 })
 
 let chartColorsvolt = {
-    green: '#199c7c'
+    green: '#70ffa3'
 };
 
 function randomScalingFactorvolt() {
@@ -176,7 +176,10 @@ let configVoltChart = {
             borderColor: chartColorsvolt.green,
             fill: false,
             cubicInterpolationMode: 'monotone',
-            data: []
+            data: [],
+            pointRadius: 0,
+            pointHoverRadius: 2,
+            tension: 0.4,
         }]
     },
     options: {
@@ -219,7 +222,7 @@ let configVoltChart = {
                 },
                 gridLines: {
                     display: true,
-                    color: "#59e0c5"
+                    color: "#79c5b642"
                 }
             }]
         },
@@ -297,7 +300,7 @@ var chartColors = {
     yellow: '#f3c30b',
     green: 'rgb(75, 192, 192)',
     blue: '#337ab7',
-    purple: '#AA00FF',
+    purple: '#bc36ff',
     grey: 'rgb(201, 203, 207)'
 };
 
@@ -324,7 +327,10 @@ var configVibrationChart = {
             borderColor: chartColors.purple,
             fill: false,
             cubicInterpolationMode: 'monotone',
-            data: []
+            data: [],
+            pointRadius: 0,
+            pointHoverRadius: 2,
+            tension: 0.4
         }]
     },
     options: {
@@ -367,7 +373,7 @@ var configVibrationChart = {
                 },
                 gridLines: {
                     display: true,
-                    color: "#805bbe"
+                    color: "#79c5b642"
                 }
             }]
         },
@@ -447,7 +453,7 @@ $(document).ready(function () {
 })
 
 var chartColorscurrent = {
-    blue: '#15f4ee'
+    blue: '#3cfffa'
 };
 
 function randomScalingFactorcurrent() {
@@ -472,7 +478,10 @@ let configCurrentChart = {
             borderColor: chartColorscurrent.blue,
             fill: false,
             cubicInterpolationMode: 'monotone',
-            data: []
+            data: [],
+            pointRadius: 0,
+            pointHoverRadius: 2,
+            tension: 0.4
         }]
     },
     options: {
@@ -515,7 +524,7 @@ let configCurrentChart = {
                 },
                 gridLines: {
                     display: true,
-                    color: "#0f66e9"
+                    color: "#79c5b642"
                 }
             }]
         },
@@ -612,7 +621,10 @@ var configTemperatureChart = {
             borderColor: chartColorstemperature.yellow,
             fill: false,
             cubicInterpolationMode: 'monotone',
-            data: []
+            data: [],
+            pointRadius: 0,
+            pointHoverRadius: 2,
+            tension: 0.4
         }]
     },
     options: {
@@ -655,7 +667,7 @@ var configTemperatureChart = {
                 },
                 gridLines: {
                     display: true,
-                    color: "#f8ac59"
+                    color: "#79c5b642"
                 }
             }]
         },
@@ -674,7 +686,22 @@ var configTemperatureChart = {
                 value: '226',
                 borderColor: '#ff0000',
                 borderWidth: 2
-            }]
+            }],
+            duration: 500,
+            easing: 'linear'
+        },
+        plugins: {
+            zoom: {
+                zoom: {
+                    wheel: {
+                        enabled: true,
+                    },
+                    pinch: {
+                        enabled: true
+                    },
+                    mode: 'xy',
+                }
+            }
         }
     }
 };

@@ -1,0 +1,151 @@
+#sidebar {
+    position: relative;
+    width: 250px;
+    max-width: 250px;
+    background: #1b2a47;
+    color: #fff;
+    transition: all 0.5s;
+}
+.wrap-logo {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.wrap-logo svg {
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    z-index: 2;
+    width: 30px !important;
+    height: 30px;
+    padding: 3px;
+    object-fit: contain;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.wrap-logo svg:hover {
+    background: #fcfdff5e;
+}
+#logocompany{
+	width: 60px;
+	padding: 5px;
+    border-radius: 50%;
+	border-bottom: 1px solid #47748b;
+}
+
+#sidebar .menu-item {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar .menu-item.active,
+#sidebar .menu-item.active:hover{
+    margin: 0;
+    color: #1b2a47;
+    font-weight: 900;
+    background: #ff647c;
+    animation: moveToRight 0.7s ease-in-out;
+}
+
+@keyframes moveToRight {
+    0% {
+      transform: translateX(-120px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+}
+
+#sidebar .menu-item p{
+    margin: 0;
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: clip; 
+}
+
+#sidebar .menu-item img{
+    width: 40px;
+    height: 20px;
+}
+
+#sidebar .menu-item:hover {
+    margin-left: -5px;
+    background: #fcfdff2a;
+    transition: ease-in 0.4s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #1b2a47;
+}
+
+#sidebar ul li a:hover {
+    color: rgb(224,74,105);
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+.navbar {
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}

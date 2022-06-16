@@ -1,0 +1,29 @@
+.wrap-gauge {
+    height: calc(100% - 4rem - 20px);
+}
+
+.img-walk {
+    position: absolute;
+    height: 50px;
+    animation: example 40s linear infinite;
+}
+
+@keyframes example {
+    0% { 
+        right: 20px;
+    }
+    49.9% {
+        transform: scaleX(1);
+    }
+    50% {
+        right: 80%;
+        transform: scaleX(-1);
+    }
+    99.9% {
+        right: 20px;
+        transform: scaleX(-1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+  }

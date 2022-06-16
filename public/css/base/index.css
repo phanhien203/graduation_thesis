@@ -5,3 +5,17 @@
 @import "speed-gauge-meter.css";
 @import "time-chart.css";
 @import "time-digital.css";
+@import "block.css";
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}

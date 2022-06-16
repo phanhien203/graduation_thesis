@@ -177,13 +177,13 @@ for (let i = 0; i < 30; i++) {
 	oeeData[i] = availabilityData[i] * performanceData[i] * qualityData[i] / 10000;
 }
 var chartColors = {
-	red: '#ff073a',
-	orange: 'rgb(255, 159, 64)',
-	yellow: 'rgb(255, 205, 86)',
-	green: 'rgb(50,205,50)',
-	blue: 'rgb(54, 162, 235)',
-	purple: '#DF00FE',
-	grey: 'rgb(201, 203, 207)'
+    red: '#ff073a',
+    orange: '#FF5722',
+    yellow: '#f3c30b',
+	green: '#70ffa3',
+    blue: '#337ab7',
+    purple: '#bc36ff',
+    grey: 'rgb(201, 203, 207)'
 };
 var chartData = {
 	labels: [
@@ -201,6 +201,9 @@ var chartData = {
 		borderColor: window.chartColors.yellow,
 		borderWidth: 2,
 		fill: false,
+		pointRadius: 1.5,
+		cubicInterpolationMode: 'monotone',
+		tension: 0.4,
 		data: [
 			100, 78, 81, 89, 83, 96, 99
 		]
@@ -210,6 +213,9 @@ var chartData = {
 		borderColor: window.chartColors.red,
 		borderWidth: 2,
 		fill: false,
+		pointRadius: 1.5,
+		cubicInterpolationMode: 'monotone',
+		tension: 0.4,
 		data: [
 			88, 83, 86, 96, 98, 78, 96
 		]
@@ -219,6 +225,9 @@ var chartData = {
 		borderColor: window.chartColors.green,
 		borderWidth: 2,
 		fill: true,
+		pointRadius: 1.5,
+		cubicInterpolationMode: 'monotone',
+		tension: 0.4,
 		data: [
 			96, 99, 100, 95, 98, 99, 99
 		]
@@ -226,6 +235,7 @@ var chartData = {
 		type: 'bar',
 		label: 'OEE',
 		backgroundColor: [],
+		barPercentage: 0.6,
 		data: [
 			oeeData[23], oeeData[24], oeeData[25], oeeData[26], oeeData[27], oeeData[28], oeeData[29]
 		]
@@ -236,10 +246,10 @@ var colorChangeValue = 80; //set this to whatever is the deciding color change v
 var dataset = chartData.datasets[3];
 for (var i = 0; i < dataset.data.length; i++) {
 	if (dataset.data[i] < colorChangeValue) {
-		dataset.backgroundColor[i] = 'rgb(246,36,71)';
+		dataset.backgroundColor[i] = '#eb4b4b';
 	}
 	if (dataset.data[i] > colorChangeValue) {
-		dataset.backgroundColor[i] = 'rgb(0,111,230)';
+		dataset.backgroundColor[i] = '#337ab7';
 	}
 }
 
@@ -282,7 +292,7 @@ var configTemperatureChart = {
 				},
 				gridLines: {
 					display: true,
-					color: "rgb(106,53,156)"
+					color: "#79c5b642"
 				}
 			}]
 		},

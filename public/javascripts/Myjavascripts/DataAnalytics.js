@@ -36,13 +36,13 @@ socket.on('/resDashboard', function (data, type) {
 
 //------------------------------- Financial Predict Chart ------------------------------
 var chartColors = {
-	red: '#ff073a',
-	orange: 'rgb(255, 159, 64)',
-	yellow: 'rgb(255, 205, 86)',
-	green: 'rgb(75, 192, 192)',
-	blue: 'rgb(54, 162, 235)',
-	purple: '#DF00FE',
-	grey: 'rgb(201, 203, 207)'
+    red: '#ff073a',
+    orange: '#FF5722',
+    yellow: '#f3c30b',
+    green: 'rgb(75, 192, 192)',
+    blue: '#337ab7',
+    purple: '#bc36ff',
+    grey: 'rgb(201, 203, 207)'
 };
 var chartDataPredict = {
 	labels: [moment(moment().subtract(4, 'days')).format('L'),
@@ -60,6 +60,10 @@ var chartDataPredict = {
 		backgroundColor: 'rgba(244,255,0,0.2)',
 		borderWidth: 2,
 		fill: true,
+		pointRadius: 1.5,
+		pointHoverRadius: 2,
+		cubicInterpolationMode: 'monotone',
+		tension: 0.4,
 		data: [
 			12.75 * 3000,
 			14.7 * 3000,
@@ -107,7 +111,7 @@ var configfinancialPredict = {
 				},
 				gridLines: {
 					display: true,
-					color: "rgb(106,53,156)"
+					color: "#79c5b642"
 				}
 			}]
 		},
@@ -202,6 +206,10 @@ var chartData = {
 		borderColor: window.chartColors.red,
 		borderWidth: 2,
 		fill: false,
+		pointRadius: 1.5,
+		pointHoverRadius: 2,
+		cubicInterpolationMode: 'monotone',
+		tension: 0.4,
 		data: [
 			70,
 			75,
@@ -219,9 +227,13 @@ var chartData = {
 	}, {
 		type: 'line',
 		label: 'Lowest',
-		borderColor: window.chartColors.blue,
+		borderColor: window.chartColors.yellow,
 		borderWidth: 2,
 		fill: true,
+		pointRadius: 1.5,
+		pointHoverRadius: 2,
+		cubicInterpolationMode: 'monotone',
+		tension: 0.4,
 		data: [
 			44,
 			52,
@@ -239,7 +251,10 @@ var chartData = {
 	}, {
 		type: 'bar',
 		label: 'Average',
-		backgroundColor: 'rgba(0, 255, 0,1)',
+		backgroundColor: "#008FFB",
+		borderWidth: 1.5,
+		borderColor: "#77c4fff5",
+		barPercentage: 0.6,
 		data: [
 			60,
 			68,
@@ -293,7 +308,7 @@ var configTemperatureChart = {
 				},
 				gridLines: {
 					display: true,
-					color: "rgb(106,53,156)"
+					color: "#79c5b642"
 				}
 			}]
 		},

@@ -1,0 +1,9 @@
+@import "sidebar.css";
+@import "dash-board.css";
+
+#content {
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+    min-height: 730px;
+}

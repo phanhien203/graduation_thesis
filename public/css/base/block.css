@@ -1,0 +1,102 @@
+.wrap-control button,
+.wrap-control input,
+.set-limit button,
+.set-limit input {
+    height: 2rem !important;
+    margin: 5px !important;
+}
+
+.wrap-control,
+.set-limit {
+    margin: auto 20px;
+}
+
+.card-body .wrap-chart{
+    height: calc(100% - 2rem - 20px);
+}
+
+.card-body .set-limit {
+    margin-top: 10px;
+}
+
+.grid-oee {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+.grid-financial {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.card-dasboard{
+	min-width: 220px;
+    height: 100%;
+	background: #1b2a47;
+	color : white;
+	border-radius: 5px;
+}
+.card-dasboard> .card-header{
+    height: 50px;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0), 0 0 30px rgba(10, 175, 230, 0), 0 0 40px rgba(10, 175, 230, 0);
+	font-size: 18px;
+}
+.card-dasboard> .card-body{
+    position: relative;
+	height: calc(100% - 50px);
+}
+
+@media screen and (min-width: 601px) {
+    .card-header{
+        color: #ffffff;
+        color: #daf6ff;
+        text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0), 0 0 30px rgba(10, 175, 230, 0), 0 0 40px rgba(10, 175, 230, 0);
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+.card-header{
+    color: #ffffff;
+    color: #daf6ff;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0), 0 0 30px rgba(10, 175, 230, 0), 0 0 40px rgba(10, 175, 230, 0);
+    font-size: 12px;
+    }   
+}
+
+.toggle-handle {
+    position: absolute !important;
+    left: 27.5px !important;
+    padding: 0 !important;
+}
+
+.toggle {
+    width: 50px !important;
+}
+
+.toggle.btn {
+    border-radius: 20px !important;
+    border: none;
+}
+
+.toggle-handle.btn {
+    /* top: -2px; */
+    width: 45px;
+    border-radius: 20px;
+}
+.main-container {
+    width: 100%;
+    height: calc(100% - 55px);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+.card-header> .row> h5 {
+    height: 1.5rem;
+    margin: 0 5px;
+}
+.card-header> .row> .switch-button {
+    position: absolute;
+    right: 10px;
+}
