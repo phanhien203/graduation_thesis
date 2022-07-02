@@ -2,9 +2,12 @@
     position: relative;
     width: 250px;
     max-width: 250px;
+    min-height: 100vh;
+    z-index: 100;
     background: #1b2a47;
     color: #fff;
     transition: all 0.5s;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.5);
 }
 .wrap-logo {
     width: 100%;
@@ -148,4 +151,12 @@ a.article:hover {
     box-shadow: none;
     outline: none !important;
     border: none;
+}
+@media (max-width: 998px) {
+    .wrap-logo svg {
+        display: none;
+    }
+    #sidebar {
+        position: fixed;
+    }
 }

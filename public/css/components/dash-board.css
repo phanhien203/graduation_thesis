@@ -1,11 +1,16 @@
 .wrap-gauge {
     height: calc(100% - 4rem - 20px);
 }
-
 .img-walk {
     position: absolute;
+    right: 20px;
     height: 50px;
     animation: example 40s linear infinite;
+}
+@media (max-width: 998px) {
+    .img-walk {
+        animation: none;
+    }
 }
 
 @keyframes example {
@@ -16,7 +21,7 @@
         transform: scaleX(1);
     }
     50% {
-        right: 80%;
+        right: calc(100% - 550px);
         transform: scaleX(-1);
     }
     99.9% {
@@ -26,4 +31,9 @@
     100% {
         transform: scaleX(1);
     }
-  }
+}
+.pick-input {
+    width: 100px !important;
+    display: flex;
+    justify-content: center;
+}

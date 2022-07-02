@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Performance Management System</title>
+    <title>Engine monitoring and control system</title>
+    <link rel="shortcut icon" type="image/png" href="/images/Myimages/logo-hh-removebg.png"/>
   </head>
 
 <body>
@@ -45,20 +46,20 @@
       </ul>
     </nav>
     <!-- Page Content  -->
-    <div id="content">
+    <div id="content" >
+      <div class="overlay"></div>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+        <div class="container-top">
           <!-- Button hide navbar -->
-          <!-- <button type="button" id="sidebarCollapse" class="btn btn-info"> <i class="fas fa-align-left"></i>
-					</button> -->
-          <div>
-            Graduation Thesis
-          </div>
-          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+          <button class="hide-nav-bar" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-align-justify"></i>
+            aria-label="Toggle navigation" onclick="clickHideSide()">
+            <i class="fas fa-align-justify hide-button"></i>
+            <div class="close-button">X</div>
           </button>
+          <div class="heading">
+            Engine monitoring & control system
+          </div>
         </div>
       </nav>
       <div class="main-container">

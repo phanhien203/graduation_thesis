@@ -3,7 +3,12 @@
 
 #content {
     width: 100%;
-    padding: 20px;
+    padding: 15px 10px;
     height: 100vh;
     min-height: 730px;
+}
+@media (max-width: 998px) {
+    #content {
+        height: 100%;
+    }
 }
